@@ -2,6 +2,11 @@
 
 import { useState } from 'react';
 
+const prefix =
+  process.env.NODE_ENV === 'production'
+    ? 'https://ji-an-jun.github.io/on-and-on-fit'
+    : '';
+
 export function Policy() {
   const [opened, setOpened] = useState(false);
   const height = opened == true ? {} : { height: 200 };
@@ -51,7 +56,7 @@ export function Policy() {
         onClick={toggleOpen}
       >
         <div style={{ ...arrow }}>
-          <img src={'/arrow.svg'} />
+          <img src={`${prefix}/arrow.svg`} />
         </div>
         <div style={{ color: '#1C1B1F', fontSize: 14, fontWeight: 350 }}>
           {text}

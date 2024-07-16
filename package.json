@@ -5,10 +5,10 @@
   "homepage": "http://ji-an-jun.github.io/on-and-on-fit",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && touch out/.nojekyll && gh-pages --dotfiles -d out"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.16.1",
     "@mui/material": "^5.16.1",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "gh-pages": "^6.1.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
