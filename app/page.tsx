@@ -21,6 +21,7 @@ export default function Home() {
           paddingLeft: 60,
           paddingRight: 60,
           paddingTop: 40,
+          paddingBottom: 40,
         }}
       >
         <div
@@ -43,6 +44,7 @@ export default function Home() {
               display: 'flex',
               gap: 20,
               flexDirection: 'column',
+              width: '100%',
               //backgroundColor: 'grey',
             }}
           >
