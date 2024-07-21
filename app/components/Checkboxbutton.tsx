@@ -50,7 +50,9 @@ export function CheckboxLabels() {
           variant="contained"
           style={{ height: 40, width: '100%' }}
           onClick={() =>
-            alert('실험이 종료되었습니다. 곧 인터뷰 세션을 시작하겠습니다.')
+            alert(
+              '실험이 종료되었습니다. 진행자의 안내가 있을 때까지 화면을 끄지 말고 기다려주세요.'
+            )
           }
           disableElevation
           {...buttonactivation}
